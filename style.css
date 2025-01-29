@@ -429,3 +429,190 @@ a {
 
 
 /* ----------Footer Section Start ----------- */
+
+footer {
+    background: #01ACFD;
+    font-family: Quicksand;
+}
+
+footer h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+footer p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 140px 0 190px 0;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+.footer-brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.brand-logo {
+    width: 76px;
+}
+
+.brand-logo img {
+    width: 100%;
+    cursor: pointer;
+}
+
+footer h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 26px;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1rem;
+    font-weight: 500;
+    gap: 16px;
+}
+
+footer a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.social-icons img {
+    width: 100%;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* ---------- Footer Section End ----------- */
+
+
+
+
+@media screen and (max-width: 576px) {
+    .curriculum-sec .story-box {
+        padding: 0 16px;
+    }
+    .navbar ul,
+    .navbar .btn,
+    .navbar .logo h3 {
+        display: none;
+    }
+    .navbar .icon {
+        display: initial;
+    }
+    .navbar {
+        margin: 0;
+        padding: 12px 16px;
+        border-bottom: 0.5px solid #fea301;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        padding: 20px 16px;
+        text-align: center;
+        gap: 20px;
+    }
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        align-self: stretch;
+    }
+    .hero .banner-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        align-self: stretch;
+    }
+    .hero h1 {
+        font-size: 2rem;
+        line-height: normal;
+    }
+    .banner-btn {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .icons {
+        display: none;
+    }
+    .card-box {
+        flex-direction: column;
+    }
+    .curriculum h2 {
+        font-size: 1.5rem;
+        padding: 40px 0 20px 0;
+        margin-bottom: 18px;
+    }
+    .story-box {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        padding: 0 16px 0 16px;
+    }
+    .first {
+        display: none;
+    }
+    .story-card button {
+        font-size: 0.5rem;
+        height: 22px;
+        position: absolute;
+        top: -14px;
+    }
+    .story-card h3 {
+        font-size: 0.5rem;
+        line-height: 17px;
+    }
+    .story-card .story-desc {
+        padding: 0 23px 17px 22px;
+    }
+    .story-desc h3 {
+        padding-top: 25px;
+    }
+    .footer-container {
+        padding: 50px 15px 50px 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-brand {
+        position: relative;
+    }
+}
